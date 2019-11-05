@@ -45,7 +45,7 @@ server.on('request', (request, response) => {
                     price: '2.5'
                 },
                 {
-                    name: '西瓜',
+                    name: '西瓜1',
                     price: '0.5'
                 }
             ];
