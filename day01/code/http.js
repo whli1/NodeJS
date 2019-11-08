@@ -13,6 +13,7 @@ const server = http.createServer()
 //注册request请求事件，当接收到客户端的请求时，自动触发 request 请求事件，然后知新规调函数
 server.on('request', (request, response) => {
     console.log(`收到客户端的请求,请求路径是${request.url}`);
+    console.log(`请求我的客户端端口是${request.socket.remotePort}，请求我的客户端ip是${request.socket.remoteAddress}`);
     /**
      *  response.write('hello');
      *  response.end();
